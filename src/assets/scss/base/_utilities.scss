@@ -12,7 +12,9 @@
 .container {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   padding: 15px;
+  background-color: $color-secondary-light;
 }
 .d-flex {
   display: flex;
@@ -45,56 +47,72 @@
 
 /*Background Colors*/
 .bg {
-  &-primary {
+  &-primary,
+  &-primary--hover:hover {
     background-color: $color-primary;
   }
-  &-primary-light {
+  &-primary-light,
+  &-primary-light--hover:hover {
     background-color: $color-primary-light;
   }
-  &-primary-dark {
+  &-primary-dark,
+  &-primary-dark--hover:hover {
     background-color: $color-primary-dark;
   }
-  &-secondary {
+  &-secondary,
+  &-secondary--hover:hover {
     background-color: $color-secondary;
   }
-  &-secondary-light {
+  &-secondary-light,
+  &-secondary-light--hover:hover {
     background-color: $color-secondary-light;
   }
-  &-secondary-dark {
+  &-secondary-dark,
+  &-secondary-dark--hover:hover {
     background-color: $color-secondary-dark;
   }
-  &-white {
+  &-white,
+  &-white--hover:hover {
     background-color: $color-white;
   }
-  &-black {
+  &-black,
+  &-black--hover:hover {
     background-color: $color-black;
   }
 }
 
 /*Border Colors*/
 .border {
-  &-primary {
+  &-primary,
+  &-primary--hover:hover {
     border-color: $color-primary !important;
   }
-  &-primary-light {
+  &-primary-light,
+  &-primary-light--hover:hover {
     border-color: $color-primary-light !important;
   }
-  &-primary-dark {
+  &-primary-dark,
+  &-primary-dark--hover:hover {
     border-color: $color-primary-dark !important;
   }
-  &-secondary {
+  &-secondary,
+  &-secondary--hover:hover {
     border-color: $color-secondary !important;
   }
-  &-secondary-light {
+  &-secondary-light,
+  &-secondary-light--hover:hover {
     border-color: $color-secondary-light !important;
   }
-  &-secondary-dark {
+  &-secondary-dark,
+  &-secondary-dark--hover:hover {
     border-color: $color-secondary-dark !important;
   }
-  &-white {
+  &-white,
+  &-white--hover:hover {
     border-color: $color-white !important;
   }
-  &-black {
+  &-black,
+  &-black--hover:hover {
     border-color: $color-black !important;
   }
 }
@@ -102,7 +120,9 @@
 /*Borders*/
 .border {
   border-width: 1px;
-  border-style: solid;
+  &-1 {
+    border-style: solid;
+  }
   &-2 {
     border-width: 2px;
   }
@@ -126,27 +146,23 @@
   }
 }
 
-.w-100 {
-  width: 100%;
+.br {
+  &-4 {
+    border-radius: 4px;
+  }
+  &-6 {
+    border-radius: 6px;
+  }
+  &-8 {
+    border-radius: 8px;
+  }
+  &-10 {
+    border-radius: 10px;
+  }
+  &-50 {
+    border-radius: 50%;
+  }
 }
-.h-100 {
-  height: 100%;
-}
-.w-auto {
-  width: auto;
-}
-.h-auto {
-  height: auto;
-}
-.mx-auto {
-  margin: 0px auto;
-}
-.my-auto {
-  margin: auto 0px;
-}
-.px-auto {
-  padding: 0px auto;
-}
-.py-auto {
-  padding: auto 0px;
+.cursor-pointer {
+  cursor: pointer;
 }

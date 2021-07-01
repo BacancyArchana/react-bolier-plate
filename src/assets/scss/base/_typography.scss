@@ -12,6 +12,9 @@
   &-16 {
     font-size: 16px;
   }
+  &-18 {
+    font-size: 18px;
+  }
   &-20 {
     font-size: 20px;
   }
@@ -44,28 +47,36 @@
 
 /*Text Colors*/
 .text {
-  &-primary {
+  &-primary,
+  &-primary--hover:hover {
     color: $color-primary;
   }
-  &-primary-light {
+  &-primary-light,
+  &-primary-light--hover:hover {
     color: $color-primary-light;
   }
-  &-primary-dark {
+  &-primary-dark,
+  &-primary-dark--hover:hover {
     color: $color-primary-dark;
   }
-  &-secondary {
+  &-secondary,
+  &-secondary--hover:hover {
     color: $color-secondary;
   }
-  &-secondary-light {
+  &-secondary-light,
+  &-secondary-light--hover:hover {
     color: $color-secondary-light;
   }
-  &-secondary-dark {
+  &-secondary-dark,
+  &-secondary-dark--hover:hover {
     color: $color-secondary-dark;
   }
-  &-white {
+  &-white,
+  &-white--hover:hover {
     color: $color-white;
   }
-  &-black {
+  &-black,
+  &-black--hover:hover {
     color: $color-black;
   }
 }

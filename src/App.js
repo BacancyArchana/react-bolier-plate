@@ -9,7 +9,7 @@ const App = () => (
     <Layout>
       <Switch>
         {menuOptions.map(({ path, Component }) => (
-          <Route key={path} path={path}>
+          <Route exact key={path} path={path}>
             <Component />
           </Route>
         ))}

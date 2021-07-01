@@ -3,3 +3,6 @@
   margin: 0px;
   box-sizing: border-box;
 }
+:focus-visible {
+  outline: $color-secondary auto 1px;
+}

@@ -12,7 +12,7 @@ const LeftBar = ({ isMenuOpen }) => {
           {menuOptions.map((menu) => (
             <Link to={menu.path} key={menu.path}>
               <li
-                className={`menu-item fs-16 ${
+                className={`menu-item fs-18 ${
                   menu.path === location.pathname ? "menu-item--active" : ""
                 }`}
               >

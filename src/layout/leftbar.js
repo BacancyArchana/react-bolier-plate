@@ -1,11 +1,10 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import { menuOptions } from "./const";
+import { menuOptions } from "./menu";
 
 const LeftBar = ({ isMenuOpen }) => {
   const location = useLocation();
-  console.log("location", location);
   return (
     isMenuOpen && (
       <div className="leftbar">
@@ -26,4 +25,5 @@ const LeftBar = ({ isMenuOpen }) => {
     )
   );
 };
+
 export default LeftBar;
